@@ -833,7 +833,7 @@
         const closeButton = document.querySelector('.close-button');
 
         const products = document.querySelectorAll('.product');
-        const availableFlavors = ["eijcc", "nuincxu"]; // Example flavors
+        const availableFlavors = []; // Example flavors
 
         products.forEach(product => {
             product.addEventListener('click', () => {
@@ -848,7 +848,7 @@
                 modalPrice.textContent = `Precio: ${price}`;
 
                 // Clear previous flavor options and create new ones
-                modalFlavorSelector.innerHTML = '<p style="margin-bottom: 5px; font-weight: bold;">"s"</p>';
+                modalFlavorSelector.innerHTML = '<p style="margin-bottom: 5px; font-weight: bold;"></p>';
                 let selectedFlavor = ''; // Variable to store the selected flavor
 
                 availableFlavors.forEach((flavor, index) => {
